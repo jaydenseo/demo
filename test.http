@@ -1,0 +1,57 @@
+GET http://localhost:8080/demo/hello
+
+###
+GET http://localhost:8080/demo/quiz5-4
+
+###
+GET http://localhost:8080/demo/hello
+
+###
+GET http://localhost:8080/stream
+
+###
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+    "id": "jmseo",
+    "name": "서정민",
+    "address": "서울"
+
+}
+###
+POST http://localhost:8080/member
+Content-Type: application/json
+
+{
+    "id": "jmseo2",
+    "name": "서정민2",
+    "address": "서울2"
+
+}
+
+###
+GET http://localhost:8080/member/jmseo
+
+###
+GET http://localhost:8080/member
+
+
+###
+GET http://localhost:8080/memberFindByName/서정민
+
+
+###
+GET http://localhost:8080/memberFindByOrName/jmseo
+
+
+###
+GET http://localhost:8080/memberFindByNameLike/서정민
+
+
+###
+GET http://localhost:8080/findByNameStartsWith/서정민
+
+
+###
+GET http://localhost:8080/memberFindByNameLike/서정민
