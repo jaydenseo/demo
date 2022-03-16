@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 import com.example.demo.model.Trader;
 import com.example.demo.model.Transaction;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/demo")
+//@CrossOrigin(origins = "http://sales-front.popit.kr", allowedHeaders = "*")
 public class DemoController {
 
     // quiz2
@@ -46,6 +48,7 @@ public class DemoController {
                 new Transaction(hwan, 2020, 4900)
         );
     }
+
 
     @GetMapping("/hello")
     public String HelloTest() {
