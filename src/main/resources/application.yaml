@@ -5,6 +5,11 @@ server:
 spring:
   # profiles:
     # active: dev
+
+  # mvc:
+  #   pathmatch:
+  #     matching-strategy: ANT_PATH_MATCHER
+  
   h2:
     console:
       enabled: true
@@ -20,6 +25,8 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+
+
 
 
 
